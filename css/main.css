@@ -9,6 +9,37 @@ body {
     font-family: 'PT Serif', serif;
 }
 
+:root {
+    --first-font-color : dimgray;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+	background-image: linear-gradient(45deg, #bc4e9c, #f80759);
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.all_section_banner{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 .container {
 	margin: auto;
 	max-width: 1140px;
@@ -20,11 +51,9 @@ body {
 /*Landing page Section start*/
 
 .banner {
-    height: 100vh;
-    background-image: url(../image/top-banner.png);
-    background-repeat: no-repeat;
+    background-image: url(../image/header-bg.png);
 }
-/*social media section*/
+/*social media section start*/
 .social_bar {
     grid-column: 1/4;
     grid-row: 1/2;
@@ -39,7 +68,7 @@ body {
 }
 
 .social_bar a {
-    color: var(--main-color);
+    color: #000;
 }
 
 .social_bar a i {
@@ -79,7 +108,9 @@ body {
     color: #fff;
 }
 
-/*hero section*/
+/*social media section end*/
+
+/*hero section start*/
 .banner .container {
     display: grid;
     position: relative;
@@ -121,15 +152,7 @@ body {
     font-size: 1.25em;
     text-align: justify;
     padding-bottom: 30px;
-}
-
-.my_self .my_self_text .link-button {
-	text-decoration: none;
-	background-image: linear-gradient(45deg, lightSalmon, tomato);
-	padding: 10px 20px;
-	border-radius: 5px;
-	color: white;
-	font-weight: 700;
+    color: var(--first-font-color);
 }
 
 .my_banner_img {
@@ -144,16 +167,15 @@ body {
 .my_img{
     padding-top: 10%;
 }
+
+/*hero section start*/
+
 /*Landing page Section end*/
 
 /*Biography section start*/
 
 .biography{
     background-image: url(../image/biography-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
 }
 
 .biography .container {
@@ -162,16 +184,15 @@ body {
     position: relative;
 }
 
-.cartoon_img {
-}
-
 .cartoon_img img{
     width: 450px;
+    
+    padding-top: 15%;
 }
 
 .biography_text {
-    margin-top: 50%;
-    transform: translateY(-50%);
+    margin-top: 60%;
+    transform: translateY(-60%);
 }
 
 .biography_text h2 {
@@ -180,7 +201,108 @@ body {
 }
 
 .biography_text p {
-    font-size: 1.875em;
-    font-size: 500;
+    font-size: 1.563em;
+    font-weight: 500;
+    color: var(--first-font-color);
+    padding-bottom: 30px;
 }
 /*Biography section end*/
+
+/*work section start*/
+
+.work {
+    background-image: url(../image/latest-work-bg.png);
+}
+
+.work_heading {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 1.875em;
+}
+
+.work_example{
+    margin-top: 20px;
+}
+
+.work_example .work_img {
+    width: 355px;
+    height: 300px;
+    padding-left: 40px;
+}
+
+.work_example .work_img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*work section end*/
+
+/*info section end*/
+
+.info {
+    background-image: url(../image/footer-bg.png);
+}
+
+.client {
+    text-align: center;
+}
+
+.client_heading {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.client_comment{
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.client_comment h3 {
+    padding-bottom: 10px;
+}
+
+.client_comment h4 {
+    padding-bottom: 30px;
+    font-weight: 600;
+    color: var(--first-font-color);
+}
+
+.client_comment p {
+    padding-bottom: 80px;
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+.client_comment p span {
+    font-size: 35px;
+}
+
+.contact {
+    width: 450px;
+    height: 100px;
+    background-image: linear-gradient(45deg, #bc4e9c, #f80759);
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.contact p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*info section end*/
+
+/*footer section start*/
+footer {
+    text-align: center;
+    color: var(--first-font-color);
+    padding-bottom: 10px;
+}
+/*footer section end*/
