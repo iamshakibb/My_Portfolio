@@ -21,21 +21,76 @@ body {
 
 .banner {
     height: 100vh;
+    background-image: url(../image/top-banner.png);
+    background-repeat: no-repeat;
 }
-
-.banner .container {
-    display: grid;
-    position: relative;
+/*social media section*/
+.social_bar {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
 }
 
 .social_bar {
-    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.social_bar a {
+    color: var(--main-color);
+}
+
+.social_bar a i {
+    font-size: 1.125em;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: 700ms ease;
+    overflow: hidden;
+}
+
+.social_bar a .fa-instagram:hover {
+    border-radius: 50%;
+    background-color: #e4405f;
+    text-align: center;
+    color: #fff;
+}
+
+.social_bar a .fa-facebook-f:hover {
+    border-radius: 50%;
+    background-color: #3b5999;
+    text-align: center;
+    color: #fff;
+}
+
+.social_bar a .fa-twitter:hover {
+    border-radius: 50%;
+    background-color: #55acee;
+    text-align: center;
+    color: #fff;
+}
+
+.social_bar a .fa-github:hover {
+    border-radius: 50%;
+    background-color: #000000;
+    text-align: center;
+    color: #fff;
+}
+
+/*hero section*/
+.banner .container {
+    display: grid;
+    position: relative;
+    grid-template-rows: 50px 600px;
 }
 
 .my_self {
     grid-column: 1/2;
+    grid-row: 2/4;
     width: 100%;
+    position: relative;
 }
 
 .my_self_text{
@@ -44,33 +99,50 @@ body {
 }
 
 .my_self .my_self_text h1 {
-    font-size: 4.375em;
+    font-size: 3.125em;
     padding-bottom: 10px;
 }
 
 .my_self .my_self_text h2 {
-    font-size: 2.5em;
+    font-size: 3.125em;
     padding-bottom: 10px;
     font-weight: 500;
+    color: #e80041;
 }
+
 
 .my_self .my_self_text h3 {
     font-size: 1.563em;
-    padding-bottom: 10px;
-    font-weight: 500;
+    padding-bottom: 15px;
+    font-weight: 600;
 }
 
 .my_self .my_self_text p {
     width: 70%;
     font-size: 1.25em;
     text-align: justify;
+    padding-bottom: 30px;
+}
+
+.my_self .my_self_text .link-button {
+	text-decoration: none;
+	background-image: linear-gradient(45deg, lightSalmon, tomato);
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	font-weight: 700;
 }
 
 .my_banner_img {
     grid-column: 2/4;
+    grid-row: 2/4;
 }
 
 .my_banner_img img {
-    width: 100%;
+    width: 600px;
+}
+
+.my_img{
+    padding-top: 10%;
 }
 /*Landing page Section end*/
