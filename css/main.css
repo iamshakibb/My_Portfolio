@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+.container {
+	margin: auto;
+	max-width: 1140px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+/*Landing page Section start*/
+
+.banner {
+    height: 100vh;
+}
+
+.banner .container {
+    display: grid;
+    position: relative;
+}
+
+.social_bar {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.my_self {
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.my_self_text{
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.my_self .my_self_text h1 {
+    font-size: 4.375em;
+    padding-bottom: 10px;
+}
+
+.my_self .my_self_text h2 {
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.my_self .my_self_text h3 {
+    font-size: 1.563em;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.my_self .my_self_text p {
+    width: 70%;
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.my_banner_img {
+    grid-column: 2/4;
+}
+
+.my_banner_img img {
+    width: 100%;
+}
+/*Landing page Section end*/
