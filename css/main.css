@@ -83,7 +83,6 @@ body {
 .banner .container {
     display: grid;
     position: relative;
-    grid-template-rows: 50px 600px;
 }
 
 .my_self {
@@ -146,3 +145,42 @@ body {
     padding-top: 10%;
 }
 /*Landing page Section end*/
+
+/*Biography section start*/
+
+.biography{
+    background-image: url(../image/biography-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.biography .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.cartoon_img {
+}
+
+.cartoon_img img{
+    width: 450px;
+}
+
+.biography_text {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.biography_text h2 {
+    font-size: 3.125em;
+    padding-bottom: 30px;
+}
+
+.biography_text p {
+    font-size: 1.875em;
+    font-size: 500;
+}
+/*Biography section end*/
