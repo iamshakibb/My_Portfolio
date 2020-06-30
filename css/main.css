@@ -304,5 +304,6 @@ footer {
     text-align: center;
     color: var(--first-font-color);
     padding-bottom: 10px;
+    letter-spacing: 2px;
 }
 /*footer section end*/
