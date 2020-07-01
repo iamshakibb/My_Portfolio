@@ -12,7 +12,7 @@ body {
 :root {
     --first-font-color : dimgray;
 }
-
+/*common css*/
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +46,7 @@ a {
 	padding-right: 15px;
 	padding-left: 15px;
 }
+/*common css*/
 
 
 /*Landing page Section start*/
@@ -298,6 +299,72 @@ a {
 }
 
 /*info section end*/
+
+/*experience section start*/
+.experience {
+    padding-bottom: 80px;
+}
+.experience_heading{
+    margin: auto;
+	max-width: 1140px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.experience h1 {
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 1.875em;
+}
+
+.experience .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.experience{
+    background-image: url("../image/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#pro-dev{
+    border-left: 10px solid;
+    border-image: linear-gradient(180deg, #136a8a, #267871);
+    border-image-slice: 1;
+}
+#basic-web{
+    border-left: 10px solid;
+    border-image: linear-gradient(180deg, #B3FFAB, #12FFF7);
+    border-image-slice: 1;
+}
+
+.single-experience{
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 5px;
+    height: 300px;
+    background-color: white;
+    width: 90%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.single-experience h2 {
+    padding-bottom: 15px;
+}
+
+.single-experience h3 {
+    padding-bottom: 15px;
+}
+
+.single-experience p {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: justify;
+}
+
+/*experience section end*/
 
 /*footer section start*/
 footer {
